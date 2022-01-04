@@ -1,0 +1,26 @@
+Mes Commandes pour le tp 
+
+Docker pull mysql
+
+sudo  docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=quentin -d 3218b38490ce
+
+sudo docker exec -it "id de container" bash
+
+mysql -u root -p
+
+mysql> create database MyDb;
+
+use MyDb;
+
+source Desktop/sql/bdd.sql 
+
+select * from customers;
+
+
+CREATE USER 'quentin' IDENTIFIED BY 'quentin';
+
+
+GRANT ALL PRIVILEGES ON MyDb.* to 'quentin';
+
+
+ show grants for 'quentin';
